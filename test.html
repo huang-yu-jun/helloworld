@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3-Transition</title>
+<style type="text/css">
+body{
+	background-color:#fff;
+	width:80%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.header{
+	float: left;
+	
+}
+
+.nav{
+	float: left;
+	margin-top: 100px;
+}
+div{
+	width:500px;
+	height:50px;
+	color:#60090A;
+	font-size:26px;
+	margin:10px;
+	text-align:center;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-family:微軟正黑體;
+}
+.Topmenu{
+	width:120px;
+	height:35px;
+	background-color:#f8b300;
+	color:#333;
+	font-size:22px;
+	margin:0px;
+	padding-top:5px;
+	text-align:center;
+	/* border-radius:5px; */
+	overflow:hidden;
+	float:left;
+	line-height: 35px;
+	/*transition: height 0.5s;/*預告要做動作，高度變化0.5秒，會有慢慢出現的效果*/
+	transition: all 0.5s;/*讓所有的動作都用0.5秒去進行變化*/
+}
+.Topmenu:hover{
+	height: 150px;/*滑鼠進來，高度變4倍*/
+	cursor: pointer;/*游標變手指*/
+	background-color: e6e6e6;
+}
+
+.Topmenu span{
+	display: block;
+	font-size: 16px;
+	letter-spacing: 1px;
+	transition: all 0.8s;
+}
+.Topmenu span:hover{
+	background-color: #a8a8a8;
+	color: #fff;
+}
+
+</style>
+</head>
+
+<body>
+<div class="header">
+	FitMate購物商城<br>
+	<small>Please Choice your favorite!</small>
+</div>
+
+
+<div= class="nav">
+	<div class="Topmenu">男士<br>
+		<span>服裝</span>
+		<span>鞋子</span>
+	</div>
+	
+	<div class="Topmenu">女士<br>
+		<span>服裝</span>
+		<span>鞋子</span>
+	</div>
+	
+	<div class="Topmenu">配件<br>
+		<span>毛巾</span>
+		<span>運動包</span>
+		<span>電子產品</span>
+	</div>
+	
+	<div class="Topmenu">運動<br>
+		<span>重訓</span>
+		<span>有氧</span>
+		<span>游泳</span>
+		<span>自行車</span>
+	</div>
+	
+	<div class="Topmenu">促銷<br>
+		<span>商品出清</span>
+		<span>限時特價</span>
+	</div>
+</div>
+
+</body>
+</html>
