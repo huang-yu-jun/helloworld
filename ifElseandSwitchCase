@@ -1,0 +1,29 @@
+//隨機印出1-100的數字並用if-else判斷是否及格
+
+int score = (int)(Math.random()*101);//隨機印出1-100
+		System.out.println(score);
+		if(score>=90) {
+			System.out.println("A");
+		}else if(score>=80){
+			System.out.println("B");
+		}else if(score>=70){
+			System.out.println("C");
+		}else if(score>=60) {
+			System.out.println("D");
+		}else {
+			System.out.println("不及格");
+		}
+    
+ //隨機印出1-12月，每個月各有幾天（暫不考慮閏年）
+ int month = (int)(Math.random()*12+1);
+		System.out.println(month);
+		switch(month) {
+			case 1: case 3: case 5: case 7: case 8 : case 10: case 12:
+				System.out.println("31天");
+					break;
+			case 2:
+				System.out.println("28天");
+					break;
+			default:
+				System.out.println("30天");
+		}
